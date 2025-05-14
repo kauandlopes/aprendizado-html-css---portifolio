@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200..700&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+}
+ :root {
+    --cor-primaria: #153f36;
+    --cor-secundaria: #eeeeee;
+    --cor-terciaria: #d47052;
+    --cor-branco: #eeeeee;
+
+ }
+
+.cabecalho {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 1.3% 2%; 
+    background-color: var(--cor-terciaria);
+    width: 100%;
+    font-weight: bold;
+    box-sizing: border-box;
+    z-index: 1000;   
+    
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 60px;
+
+}
+
+
+.cabecalho__menu__links {
+    color: var(--cor-secundaria);
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+     transition: background-color 0.4s ease;
+    
+}
+
+.cabecalho__menu__links:hover {
+    color: var(--cor-primaria);
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: var(--cor-terciaria); 
+    box-shadow: inset 0 -1200px 270px -200px var(--cor-primaria);
+    min-height: 195vh;
+    margin: 0;
+    color: var(--cor-secundaria);
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+strong{
+    color: var(--cor-primaria);
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.sobre__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 8%;
+    gap: 90px;
+}
+
+
+.sobre__conteudo {
+    flex: 1 1 60%;
+    max-width: 700px;
+    min-width: 300px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 20px;
+    color: var(--cor-secundaria);
+    line-height: 1;
+}
+
+
+.sobre__titulo {
+    font-size: 28px;
+    color: var(--cor-branco);
+    margin-bottom: 20px;
+}
+
+
+.sobre__imagem {
+    flex: 1 1 35%;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.apresentacao_conteudo {   
+    min-width: 600px;  
+    max-width: 910px;  
+}
+
+
+.apresentacao_conteudo_titulo{
+    font-size: 50px;
+    font-family: "Oswald", sans-serif
+     
+}
+
+.apresentacao_conteudo_texto{
+    font-size: 30px;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+.apresentacao_conteudo_sobre {
+    font-size: 25px;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+.kauan_imagem{
+    width: 30%; 
+    height: auto;
+    border-radius: 66%;
+}
+
+.gitHubIcon{
+    width: 10%; 
+    height: auto;
+}
+
+.likedinIcon{
+    width: 10%; 
+    height: auto;
+}
+  
+.apresentacao_links{
+    margin-top: 20px;
+    display: flex;
+    gap:1px
+}
+
+.apresentacao_links_link{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+    background-color: var(--cor-primaria);
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    
+    font-size: 24px;
+    padding: 21.5px 0px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    
+    font-size: 16px;
+    font-weight: 600;
+    color:var(--cor-secundaria);
+    font-family: "Encode Sans Expanded", sans-serif;
+   
+    transform: scale(0.94);
+    box-shadow: 10 4px 10px rgba(0,0,0,0.2);
+    
+}
+.apresentacao_links_link:hover {
+    background-color: var(--cor-primaria); 
+    transform: scale(1.0); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); 
+}
+
+.segunda__page { 
+    margin-top: -100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 3rem; 
+    color: var(--cor-terciaria);
+    font-family: "Encode Sans Expanded", sans-serif;
+
+    padding: 40px 0;
+   
+}
+
+
+footer {
+  background-color: var(--cor-primaria) ;
+  
+  color: var(--cor-branco);
+  text-align: center;
+  padding: 2% 0;
+  margin-top: auto;
+  
+}
